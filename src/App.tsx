@@ -1,7 +1,9 @@
+import './globals.css';
+
 const App = () => {
-  return (
-    <div>App</div>
-  )
+    return (
+        <div>Hello AngryFish</div>
+    )
 }
 
 export default App
