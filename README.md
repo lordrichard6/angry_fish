@@ -28,3 +28,32 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Steps
+
+## npm create vite@latest
+## npm install
+## npm run dev
+
+# tailwind
+## npm install -D tailwindcss postcss autoprefixer
+## npx tailwindcss init -p
+```js
+  /** @type {import('tailwindcss').Config} */
+  export default {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+```
+
+```js
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+```
