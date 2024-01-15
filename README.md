@@ -29,15 +29,17 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
-# Steps
-
-## npm create vite@latest
-## npm install
-## npm run dev
-
-# tailwind
-## npm install -D tailwindcss postcss autoprefixer
-## npx tailwindcss init -p
+## Steps
+```js
+npm create vite@latest
+npm install
+npm run dev
+```
+## tailwind
+```js
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 ```js
   /** @type {import('tailwindcss').Config} */
   export default {
