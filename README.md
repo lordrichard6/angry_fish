@@ -88,3 +88,7 @@ export default defineConfig({
   },
 })
 ```
+
+```js
+npx shadcn-ui@latest init
+```
