@@ -10,7 +10,8 @@
   }
 
   body {
-    @apply bg-dark-1 text-white min-h-screen font-inter;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    @apply text-white min-h-screen font-inter;
   }
 }
 
