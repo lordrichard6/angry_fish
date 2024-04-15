@@ -23,7 +23,7 @@ const Topbar = () => {
             alt="logo"
             width={50}
           />
-          {/* <h1>Angryoctopus</h1> */}
+          <h1 className="fish-font text-4xl">AngryFish</h1>
         </Link>
 
         <div className="flex gap-4">
