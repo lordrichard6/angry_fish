@@ -21,9 +21,12 @@
     "lucide-react": "^0.309.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.49.3",
     "react-router-dom": "^6.21.2",
+    "solidjs-dropzone": "^1.0.0",
     "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   },
   "devDependencies": {
