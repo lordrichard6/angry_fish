@@ -21,9 +21,9 @@ const Topbar = () => {
           <img
             src="/assets/images/logo_v2.svg"
             alt="logo"
-            width={130}
-            height={325}
+            width={50}
           />
+          {/* <h1>Angryoctopus</h1> */}
         </Link>
 
         <div className="flex gap-4">
