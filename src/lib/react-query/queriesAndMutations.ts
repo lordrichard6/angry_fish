@@ -1,6 +1,7 @@
 import {
   // useQuery,
   useMutation,
+  useQuery,
   useQueryClient,
   // useQueryClient,
   // useInfiniteQuery,
@@ -8,6 +9,7 @@ import {
 import {
   createPost,
   createUserAccount,
+  getRecentPosts,
   SignInAccount,
   signOutAccount,
   updatePost,
@@ -34,6 +36,8 @@ export const useSignOutAccount = () => {
   });
 };
 
+// ========================= POST QUERIES
+
 export const useCreatePost = () => {
   const queryClient = useQueryClient();
   return useMutation({
@@ -55,5 +59,12 @@ export const useUpdatePost = () => {
         queryKey: [QUERY_KEYS.GET_POST_BY_ID, data?.$id],
       });
     },
+  });
+};
+
+export const useGetRecentPosts = () => {
+  return useQuery({
+    queryKey: [QUERY_KEYS.GET_RECENT_POSTS],
+    queryFn: getRecentPosts,
   });
 };
