@@ -10,12 +10,19 @@ export const appwriteConfig = {
     savesCollectionId: import.meta.env.VITE_APPWRITE_SAVES_COLLECTION_ID,
 }
 
+const appwriteVerification = {
+    url: import.meta.env.VITE_APPWRITE_PROJECT_DOMAIN,
+}
+
 export const client = new Client();
 
 client.setProject(appwriteConfig.projectId);
 client.setEndpoint(appwriteConfig.url);
 
+
 export const account = new Account(client);
 export const databases = new Databases(client);
 export const storage = new Storage(client);
 export const avatars = new Avatars(client);
+
+account.createVerification(appwriteVerification.url);
