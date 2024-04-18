@@ -33,7 +33,7 @@ const LeftSidebar = () => {
             alt="logo"
             width={50}
           />
-          <h1 className="fish-font text-4xl">AngryFish</h1>
+          <h1 className="fish-font text-4xl text-primary-500">AngryFish</h1>
         </Link>
         {isLoading || !user.email ? (
           <div className="h-14">
