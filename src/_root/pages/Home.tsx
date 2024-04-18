@@ -7,7 +7,7 @@ import PostCard from "@/components/shared/PostCard";
 const Home = () => {
   const {
     data: posts,
-    isPending: isPostLoading,
+    isLoading: isPostLoading,
     // isError: isErrorPosts,
   } = useGetRecentPosts();
 
